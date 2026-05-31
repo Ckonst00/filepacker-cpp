@@ -26,13 +26,13 @@ cmake --build build
 ## Usage
 
 ```bash
-./build/rw-json I output.json file1.cpp file2.h file3.cpp
+./build/rw-json I output file1.cpp file2.h file3.cpp
 ```
 
 **Arguments:**
 1. The executable
 2. Mode
-3. Name for the output JSON file
+3. Name for the output JSON file. Don't include ".json" in the name for the output file. Code handles that automatically.
 4. One or more filenames to pack
 
 ---
