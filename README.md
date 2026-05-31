@@ -30,8 +30,8 @@ cmake --build build
 ```
 
 **Arguments:**
-1. Mode
-2. The executable
+1. The executable
+2. Mode
 3. Name for the output JSON file
 4. One or more filenames to pack
 
