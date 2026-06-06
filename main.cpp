@@ -9,6 +9,7 @@
 #include <string_view>
 #include <vector>
 
+// Creates a directory "output" in the current path and creates files inside the output.
 int createFile(const std::string_view filename, const std::string_view content) {
 
   std::filesystem::path outDir = std::filesystem::current_path() / "output";
@@ -29,6 +30,7 @@ int createFile(const std::string_view filename, const std::string_view content) 
   return 0;
 }
 
+// Create JSON file to include given files and their contents
 int toJson(const std::vector<std::string> &inputs) {
 
   // Print out the given filenames
@@ -77,6 +79,7 @@ int toJson(const std::vector<std::string> &inputs) {
   return 0;
 }
 
+// Create files from the JSON
 int fromJson(const std::vector<std::string> &inputs) {
 
   // Print out the given filenames
