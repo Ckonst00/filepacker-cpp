@@ -12,10 +12,10 @@
 int createFile(const std::string_view filename, const std::string_view content) {
 
   std::filesystem::path outDir = std::filesystem::current_path() / "output";
-  std::cout << "Output dir: " << outDir << "\n";
+  std::cout << "> Output dir: " << outDir << "\n";
   std::filesystem::create_directories(outDir);
   std::filesystem::path filepath = outDir / std::string(filename);
-  std::cout << "Creating file: " << filepath << "\n";
+  std::cout << "> Creating file: " << filepath << "\n";
 
   // Open a file
   std::ofstream outf{filepath};
